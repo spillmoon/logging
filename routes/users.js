@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
   logger.log('debug', 'query: %j', req.query, {});
   logger.log('debug', 'range: %s', req.headers['range']);
 
-  logger.log('debug', '%s %s://%s%s', req.method, req.protocol, req.headers['host'], req.originalUrl)
+  logger.log('info', '%s %s://%s%s', req.method, req.protocol, req.headers['host'], req.originalUrl);
 
   res.send('respond with a resource');
 });
